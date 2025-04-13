@@ -1,0 +1,113 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scroll bar */
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%; /* Black background */
+    --foreground: 0 0% 100%; /* White text */
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 195 75% 52%; /* #2caade */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 75% 95%;
+    --secondary-foreground: 195 75% 30%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 195 75% 52%; /* #2caade */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 195 75% 52%; /* #2caade */
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 80%;
+
+    --sidebar-primary: 195 75% 52%; /* #2caade */
+    --sidebar-primary-foreground: 0 0% 100%;
+
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 195 75% 52%; /* #2caade */
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 195 75% 52%; /* #2caade */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 75% 30%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 195 75% 52%; /* #2caade */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 195 75% 52%; /* #2caade */
+    
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 80%;
+    --sidebar-primary: 195 75% 52%; /* #2caade */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 195 75% 52%; /* #2caade */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

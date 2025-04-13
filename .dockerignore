@@ -1,0 +1,36 @@
+# Versioning and metadata
+.git
+.github
+.gitignore
+
+# Build dependencies
+node_modules
+.npm
+
+# Environment (contains sensitive data)
+# .env
+.env.*
+!.env.example
+
+# Files not required for production
+README.md
+CHANGELOG.md
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Next.js build output
+.next
+out
+
+# Testing
+coverage 
