@@ -398,7 +398,7 @@ export function Chat({
                       transition={{ delay: 0.3 }}
                       className="text-xs md:text-base text-muted-foreground/80 max-w-[340px] mx-auto leading-relaxed"
                     >
-                      An deep  assistant alternative to OpenAI and Gemini's research capabilities. Ask any question to generate a comprehensive report.
+                      A deep research assistant alternative to OpenAI and Gemini's research capabilities. Ask any question to generate a comprehensive report.
                       
                     </motion.p>
 
