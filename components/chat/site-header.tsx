@@ -22,7 +22,7 @@ export function Header() {
                 alt="Thron Logo"
                 width={400}
                 height={100}
-                className="w-48 invert opacity-30 hover:opacity-90 transition-opacity duration-300"
+                className="w-48 opacity-30 hover:opacity-90 transition-opacity duration-300"
               />
             </Link>
           </div>
